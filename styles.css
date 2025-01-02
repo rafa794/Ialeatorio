@@ -40,8 +40,23 @@ h1 {
 }
 
 .result {
+    display: none;
     margin-top: 20px;
-    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.result h2 {
+    margin-top: 0;
     color: #333;
-    word-wrap: break-word;
+}
+
+.result p {
+    margin: 0;
+    color: #555;
 }
