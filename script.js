@@ -51,7 +51,7 @@ function generateEuromillon() {
 
 function displayResult(resultTitle, bets) {
     const resultDiv = document.getElementById("result");
-    resultDiv.style.display = "block";
+    resultDiv.style.display = "flex";
     resultDiv.innerHTML = `
         <h2>${resultTitle}</h2>
         <p>${bets}</p>
