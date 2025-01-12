@@ -39,8 +39,8 @@ function generateBonoloto() {
     `);
 }
 
-// Euromillón
-function generateEuromillon() {
+// El gordo
+function generateElGordo() {
     const mainNumbers = getRandomNumbers(54, 5).join(", ");
     const luckyStars = getRandomNumbers(9, 1).join(", ");
     displayResult("El Gordo", `
@@ -49,8 +49,8 @@ function generateEuromillon() {
     `);
 }
 
-function generateElGordo() {
-    const mainNumbers = getRandomNumbers(54, 5).join(", ");
+function generateEuromillón() {
+    const mainNumbers = getRandomNumbers(50, 5).join(", ");
     const luckyStars = getRandomNumbers(12, 2).join(", ");
     displayResult("Euromillón", `
         <strong>Números:</strong> ${mainNumbers}<br>
