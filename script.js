@@ -41,7 +41,16 @@ function generateBonoloto() {
 
 // Euromillón
 function generateEuromillon() {
-    const mainNumbers = getRandomNumbers(50, 5).join(", ");
+    const mainNumbers = getRandomNumbers(54, 5).join(", ");
+    const luckyStars = getRandomNumbers(9, 1).join(", ");
+    displayResult("El Gordo", `
+        <strong>Números:</strong> ${mainNumbers}<br>
+        <strong>Clave:</strong> ${luckyStars}
+    `);
+}
+
+function generateElGordo() {
+    const mainNumbers = getRandomNumbers(54, 5).join(", ");
     const luckyStars = getRandomNumbers(12, 2).join(", ");
     displayResult("Euromillón", `
         <strong>Números:</strong> ${mainNumbers}<br>
